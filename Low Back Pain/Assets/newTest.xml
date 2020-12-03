@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<LowBackPain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Configuration>
+    <Blocks nb="2">
+      <Block0>
+        <ScalingFactor0 Scaling="0.55" NbTrials="2" />
+        <ScalingFactor1 Scaling="1.2" NbTrials="1" />
+        <ScalingFactor2 Scaling="0.96" NbTrials="1" />
+      </Block0>
+      <Block1>
+        <ScalingFactor0 Scaling="0.63" NbTrials="2" />
+        <ScalingFactor1 Scaling="1.23" NbTrials="1" />
+        <ScalingFactor2 Scaling="1.06" NbTrials="1" />
+      </Block1>
+    </Blocks>
+  </Configuration>
+</LowBackPain>

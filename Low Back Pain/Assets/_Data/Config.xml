@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<LowBackPain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Configuration>
+    <Map Path="" SizeX="" SizeY="" SizeZ="" PosX="" PosY="" PosZ="" RotX="" RotY="" RotZ="" />
+    <Blocks nb="2">
+      <Block0>
+        <ScalingFactor0 Scaling="0.841" NbTrials="2" />
+        <ScalingFactor1 Scaling="0.891" NbTrials="2" />
+        <ScalingFactor2 Scaling="1" NbTrials="2" />
+        <ScalingFactor3 Scaling="1.123" NbTrials="2" />
+        <ScalingFactor4 Scaling="1.190" NbTrials="2" />
+      </Block0>
+      <Block1>
+        <ScalingFactor0 Scaling="0.841" NbTrials="2" />
+        <ScalingFactor1 Scaling="0.891" NbTrials="2" />
+        <ScalingFactor2 Scaling="1" NbTrials="2" />
+        <ScalingFactor3 Scaling="1.123" NbTrials="2" />
+        <ScalingFactor4 Scaling="1.190" NbTrials="2" />
+      </Block1>
+    </Blocks>
+  </Configuration>
+</LowBackPain>
