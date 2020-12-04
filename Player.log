@@ -1,0 +1,148 @@
+Mono path[0] = 'E:/LBP/Build/Low Back Pain_Data/Managed'
+Mono config path = 'E:/LBP/Build/MonoBleedingEdge/etc'
+Initialize engine version: 2019.2.7f2 (c96f78eb5904)
+[XR] Discovering subsystems at path E:/LBP/Build/Low Back Pain_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Super (ID=0x1e93)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   27.21.14.5730
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.061 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+MaximizedWindow is not currently supported on Windows, setting to FullsceenWindow instead
+ 
+(Filename: C:\buildslave\unity\build\PlatformDependent/WinPlayer/ScreenManagerWin.cpp Line: 275)
+
+<RI> Initialized touch support.
+OpenVR initialized!
+ 
+(Filename: C:\buildslave\unity\build\Modules/VR/OpenVR/OpenVR.cpp Line: 839)
+
+Created eye textures with a "separate" layout.  The "multi-pass" stereo mode will be used.
+
+UnloadTime: 0.395100 ms
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 58e8 -> priority: 1 
+  Thread -> id: 3b40 -> priority: 1 
+  Thread -> id: 23e4 -> priority: 1 
+  Thread -> id: 4c44 -> priority: 1 
+  Thread -> id: 6434 -> priority: 1 
+  Thread -> id: 5758 -> priority: 1 
+  Thread -> id: 3c40 -> priority: 1 
+  Thread -> id: 6c38 -> priority: 1 
+A Canvas named "Background" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost, but will not be visible while in VR. Is this intentional?
+ 
+(Filename: C:\buildslave\unity\build\Modules/UI/CanvasManager.cpp Line: 945)
+
+Curl error 6: Could not resolve host: config.uca.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.021400 ms
+StartRecordingFirstView
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+OBS Websocket FirstView is connected = True
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+OBS Websocket ThirdView is connected = True
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4587.
+Total: 9.078300 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.051300 ms MarkObjects: 8.585400 ms  DeleteObjects: 0.170600 ms)
+
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Event occurred! : EventWaitingForTrigger
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCaptureStarted
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Reloading settings from QTM
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Stop recording First view
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Stop recording Third view
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Event occurred! : EventCameraSettingsChanged
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+OpenVR Shutdown
+ 
+(Filename: C:\buildslave\unity\build\Modules/VR/OpenVR/OpenVR.cpp Line: 1533)
+

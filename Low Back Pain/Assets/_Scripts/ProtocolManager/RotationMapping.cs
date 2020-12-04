@@ -23,6 +23,7 @@ public class RotationMapping : MonoBehaviour
     {
         result = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
         result.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+        result.transform.gameObject.layer = 8;
 
         Manager.instance.TargetMarker = result.gameObject;
     }

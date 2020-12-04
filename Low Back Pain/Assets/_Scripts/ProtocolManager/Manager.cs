@@ -253,6 +253,17 @@ public class Manager : MonoBehaviour
                 inputNextTrial = false;
                 inputStartTrial = false;
 
+                //Change culling mask
+                oldMask = Camera.main.cullingMask;
+                Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("Avatar"));
+
+                fadeCameraVR.m_FadeDuration = 0.5f;
+                fadeCameraVR.FadeIn(false);
+
+                //Change room
+                room.SetActive(false);
+                neutralRoom.SetActive(true);
+
                 GoToNextTrial();
             }
             else if ((GetInputNextTrial) && IsStartTask && !IsStartTrialTask)//START NEXT TRIAL

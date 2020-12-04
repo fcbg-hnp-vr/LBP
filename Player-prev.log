@@ -1,0 +1,470 @@
+Mono path[0] = 'E:/LBP/DevBuild/Low Back Pain_Data/Managed'
+Mono config path = 'E:/LBP/DevBuild/MonoBleedingEdge/etc'
+PlayerConnection initialized from E:/LBP/DevBuild/Low Back Pain_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55016
+Multi-casting "[IP] 192.168.144.101 [Port] 55016 [Flags] 2 [Guid] 2948680292 [EditorId] 2962150256 [Version] 1048832 [Id] WindowsPlayer(L-1010036827) [Debug] 0 [PackageName] WindowsPlayer" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55016]
+PlayerConnection already initialized - listening to [0.0.0.0:55016]
+Initialize engine version: 2019.2.7f2 (c96f78eb5904)
+[XR] Discovering subsystems at path E:/LBP/DevBuild/Low Back Pain_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 Super (ID=0x1e93)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   27.21.14.5730
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.069 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+MaximizedWindow is not currently supported on Windows, setting to FullsceenWindow instead
+ 
+(Filename: C:\buildslave\unity\build\PlatformDependent/WinPlayer/ScreenManagerWin.cpp Line: 275)
+
+<RI> Initialized touch support.
+OpenVR initialized!
+ 
+(Filename: C:\buildslave\unity\build\Modules/VR/OpenVR/OpenVR.cpp Line: 839)
+
+Created eye textures with a "separate" layout.  The "multi-pass" stereo mode will be used.
+
+UnloadTime: 0.401300 ms
+Setting up 8 worker threads for Enlighten.
+  Thread -> id: 48e0 -> priority: 1 
+  Thread -> id: 2c90 -> priority: 1 
+  Thread -> id: 1648 -> priority: 1 
+  Thread -> id: 3750 -> priority: 1 
+  Thread -> id: 5900 -> priority: 1 
+  Thread -> id: 6e4 -> priority: 1 
+  Thread -> id: 5740 -> priority: 1 
+  Thread -> id: 43ec -> priority: 1 
+A Canvas named "Background" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost, but will not be visible while in VR. Is this intentional?
+ 
+(Filename: C:\buildslave\unity\build\Modules/UI/CanvasManager.cpp Line: 945)
+
+Curl error 6: Could not resolve host: config.uca.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+The referenced script on this Behaviour (Game Object 'Video Player') is missing!
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Mono/ManagedMonoBehaviourRef.cpp Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.038000 ms
+Hips
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftShoulder
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftForeArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftHand
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightShoulder
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightForeArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightHand
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Neck
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Head
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftUpLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftFoot
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftToeBase
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightUpLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightFoot
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightToeBase
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Hips
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Spine2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftShoulder
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftForeArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftHand
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightShoulder
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightForeArm
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightHand
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Neck
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Head
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftUpLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftFoot
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+LeftToeBase
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightUpLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightLeg
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightFoot
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+RightToeBase
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+QualisysRealTime.Unity.RTSkeleton:Update() (at D:\Unity Projects\Low Back Pain\Assets\Qualisys\QTM-Unity-Realtime-Streaming\Streaming\RTSkeleton.cs:53)
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/Qualisys/QTM-Unity-Realtime-Streaming/Streaming/RTSkeleton.cs Line: 53)
+
+Uploading Crash Report
+NullReferenceException: Object reference not set to an instance of an object
+  at RotationMapping.Update () [0x0006a] in D:\Unity Projects\Low Back Pain\Assets\_Scripts\ProtocolManager\RotationMapping.cs:41 
+ 
+(Filename: D:/Unity Projects/Low Back Pain/Assets/_Scripts/ProtocolManager/RotationMapping.cs Line: 41)
+
+Curl error 6: Could not resolve host: perf-events.cloud.unity3d.com
+System memory in use before: 82.6 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4537.
+Total: 8.986700 ms (FindLiveObjects: 0.295400 ms CreateObjectMapping: 0.060300 ms MarkObjects: 8.353500 ms  DeleteObjects: 0.277100 ms)
+
+Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
+OpenVR Shutdown
+ 
+(Filename: C:\buildslave\unity\build\Modules/VR/OpenVR/OpenVR.cpp Line: 1533)
+
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1606404535897,"processId":24548,"allocatedMemory":61002,"memoryLabels":[{"Default":1048},{"NewDelete":236},{"Thread":-184},{"Manager":320},{"VertexData":2256},{"GfxDevice":8608},{"Animation":38384},{"Audio":192},{"Physics":48},{"Serialization":40},{"Terrain":88},{"String":1796},{"DynamicArray":2848},{"PoolAlloc":-88},{"WebRequest":2682},{"VR":2728}]}

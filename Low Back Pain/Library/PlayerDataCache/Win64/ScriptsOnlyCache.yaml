@@ -2479,4 +2479,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/_Scenes/Menu.unity
   - Assets/_Scenes/MainScene.unity
-  playerPath: D:/Unity/Low Back Pain/Build/Low Back Pain.exe
+  playerPath: E:/LBP/Build/Low Back Pain.exe
