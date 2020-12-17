@@ -86,15 +86,13 @@ public class WriteData : MonoBehaviour
 
         dictionnaryData.Add(index, data);
 
-        /*Debug.Log("ADD DATA");
-        Debug.Log("ID = "+ _id);
-        Debug.Log("Trial number = "+ _trialNumber);
-        Debug.Log("Scaling factor = "+ _scalingFactor);
-        Debug.Log("Validate = "+ _validate);
-        Debug.Log("bellow line = " + _stayBellowTheLine);*/
-
-
         index++;
+    }
+
+    public void ClearData()
+    {
+        dictionnaryData = new Dictionary<int, List<string>>();
+        index = 0;
     }
 
     public void WriteAllData()

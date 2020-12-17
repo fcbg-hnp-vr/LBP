@@ -348,20 +348,14 @@ public class Manager : MonoBehaviour
 
                 if(consecutiveTrial == 2)
                 {
-
-                    fadeCameraVR.m_FadeDuration = 1f;
-                    fadeCameraVR.FadeOut(false);
-
                     consecutiveTrial = 0;
-                    AddData();
-                    GoToNextTrial();
+                    AddData(IsTaskValidated.ToString());
 
                     StartCoroutine(StopRecording());
-
                 }
                 else
                 {
-                    AddData();
+                    AddData(IsTaskValidated.ToString());
                     StartNextTrial();
                 }
             }
@@ -500,12 +494,10 @@ public class Manager : MonoBehaviour
         }
     }
 
-    public void NotValidateTrial()
+    public void ValidateAsProblemTrial()
     {
-        if(consecutiveTrial == 2)
+        if (consecutiveTrial == 2)
         {
-            fadeCameraVR.m_FadeDuration = 0.5f;
-            fadeCameraVR.FadeOut(false);
 
             consecutiveTrial = 0;
             inputNextTrial = false;
@@ -517,8 +509,7 @@ public class Manager : MonoBehaviour
             returnToInitialPosition.SetActive(false);
 
             StopAllCoroutines();
-            AddData();
-            GoToNextTrial();
+            AddData("OTHER");
 
             StartCoroutine(StopRecording());
         }
@@ -528,7 +519,38 @@ public class Manager : MonoBehaviour
             IsTaskValidated = false;
 
             StopAllCoroutines();
-            AddData();
+            AddData("OTHER");
+            StartNextTrial();
+        }
+
+    }
+
+    public void NotValidateTrial()
+    {
+        if(consecutiveTrial == 2)
+        {
+
+            consecutiveTrial = 0;
+            inputNextTrial = false;
+            inputStartTrial = false;
+
+            IsTaskValidated = false;
+            validatePanel.SetActive(false);
+
+            returnToInitialPosition.SetActive(false);
+
+            StopAllCoroutines();
+            AddData(IsTaskValidated.ToString());
+           
+            StartCoroutine(StopRecording());
+        }
+        else
+        {
+            validatePanel.SetActive(false);
+            IsTaskValidated = false;
+
+            StopAllCoroutines();
+            AddData(IsTaskValidated.ToString());
             StartNextTrial();
         }
         
@@ -538,8 +560,6 @@ public class Manager : MonoBehaviour
     {
         if (consecutiveTrial == 2)
         {
-            fadeCameraVR.m_FadeDuration = 0.5f;
-            fadeCameraVR.FadeOut(false);
 
             consecutiveTrial = 0;
             inputNextTrial = false;
@@ -551,8 +571,7 @@ public class Manager : MonoBehaviour
             returnToInitialPosition.SetActive(false);
 
             StopAllCoroutines();
-            AddData();
-            GoToNextTrial();
+            AddData(IsTaskValidated.ToString());
 
             StartCoroutine(StopRecording());
         }
@@ -562,13 +581,18 @@ public class Manager : MonoBehaviour
             IsTaskValidated = true;
 
             StopAllCoroutines();
-            AddData();
+            AddData(IsTaskValidated.ToString());
             StartNextTrial();
         }
     }
 
     private IEnumerator StopRecording()
     {
+        yield return new WaitForSeconds(3);
+
+        fadeCameraVR.m_FadeDuration =1f;
+        fadeCameraVR.FadeOut(false);
+
         if (Settings.instance.recordFirstView && startRecordingVideoFirstView == true)
         {
             startRecordingVideoFirstView = false;
@@ -588,12 +612,20 @@ public class Manager : MonoBehaviour
         oldMask = Camera.main.cullingMask;
         Camera.main.cullingMask &= ~(1 << LayerMask.NameToLayer("Avatar"));
 
-        fadeCameraVR.m_FadeDuration = 0.5f;
+        fadeCameraVR.m_FadeDuration = 1f;
         fadeCameraVR.FadeIn(false);
       
         //Change room
         room.SetActive(false);
         neutralRoom.SetActive(true);
+
+        GoToNextTrial();
+
+        WriteDataToFile();
+
+        yield return new WaitForSeconds(0.1f);
+
+        WriteData.instance.ClearData();
     }
 
     private void StartRecording()
@@ -688,9 +720,20 @@ public class Manager : MonoBehaviour
         yield return true;
     }
 
-    void AddData()
+    void AddData(string _validate)
     {
-        WriteData.instance.AddData(Settings.instance.participantId, TrialNumber.ToString(), ScalingFactor.ToString(), IsTaskValidated.ToString(), IsStayBellowTheLine.ToString());//Specify all arguments (here, name, age, adress)
+        WriteData.instance.AddData(Settings.instance.participantId, TrialNumber.ToString(), ScalingFactor.ToString(), _validate, IsStayBellowTheLine.ToString());//Specify all arguments (here, name, age, adress)
+    }
+
+    void WriteDataToFile()
+    {
+
+        Thread myThread = new System.Threading.Thread(delegate ()
+        {
+            WriteData.instance.WriteAllData();
+        });
+
+        myThread.Start();
     }
    
     public float MapValue(float x, float inMin, float inMax, float outMin, float outMax)
@@ -717,12 +760,7 @@ public class Manager : MonoBehaviour
     {
         StopAllCoroutines();
 
-        Thread myThread = new System.Threading.Thread(delegate ()
-        {
-            WriteData.instance.WriteAllData();
-        });
-
-        myThread.Start();
+        WriteDataToFile();
     }
 
 }
