@@ -11,7 +11,7 @@ public class Manager : MonoBehaviour
     public static Manager instance;
 
     [Header("MAPPING")]
-    private float scalingFactor = 0;
+    public float scalingFactor = 0;
 
     [Header("Avatar")]
     public GameObject men;
@@ -212,7 +212,6 @@ public class Manager : MonoBehaviour
 
     public void Update()
     {
-       
 
         //Active men or women avatar
         if (Settings.instance.isMan)

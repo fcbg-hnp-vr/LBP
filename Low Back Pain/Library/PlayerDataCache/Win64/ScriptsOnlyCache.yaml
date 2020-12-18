@@ -57,6 +57,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -778,7 +779,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 4564b9ec6be218d21ed00e22dc464de5
+      Hash: d7320271ec9f3b22017247f38c080d6a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Manager
@@ -1312,7 +1313,7 @@ ScriptsOnlyBuild:
     className: CinemachinePath
   - hash:
       serializedVersion: 2
-      Hash: 8c0504777bb7fd0e8c4c1052a1906034
+      Hash: d6a9f5b5d825b337060f058e832aae19
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RotationMapping
@@ -1924,7 +1925,7 @@ ScriptsOnlyBuild:
     className: MirrorScript
   - hash:
       serializedVersion: 2
-      Hash: 147e3b7567c4baba08a2814a0a89eab2
+      Hash: f446a8f8f717f8228b684134bfc0fdce
     assemblyName: Assembly-CSharp.dll
     namespaceName: QualisysRealTime.Unity
     className: RTMarkerStream
@@ -2478,4 +2479,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/_Scenes/Menu.unity
   - Assets/_Scenes/MainScene.unity
-  playerPath: E:/LBP/Build/Low Back Pain.exe
+  playerPath: D:/GitHub/LBP/Low Back Pain/Build/Low Back Pain.exe

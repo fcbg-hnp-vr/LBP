@@ -16,21 +16,29 @@ public class RotationMapping : MonoBehaviour
 
     public Transform from, to, result;
     public float angle;
+    public Material materialMarker;
 
     float distFromTo;
 
-    void Start()
+    void OnEnable()
     {
+        if(Manager.instance.TargetMarker != null)
+        {
+            Destroy(Manager.instance.TargetMarker);
+        }
+
         result = GameObject.CreatePrimitive(PrimitiveType.Sphere).transform;
         result.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-        result.transform.gameObject.layer = 8;
+        result.transform.gameObject.layer = 20;
+        result.GetComponent<Renderer>().material = materialMarker;
 
         Manager.instance.TargetMarker = result.gameObject;
     }
 
 
-    void Update()
+    void LateUpdate()
     {
+        
         if (Settings.instance != null)
         {
             if (from == null)
@@ -50,47 +58,25 @@ public class RotationMapping : MonoBehaviour
             }
 
             RotationMappingAvatar();
+
+            if (from != null && to != null)
+                RotationMappingMarker();
         }
-        
-
-
-        /*Debug.Log("Map Value = " + MapValue(0, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(1, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(0.841f, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(0.891f, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(1.123f, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(1.190f, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(1.5f, 0, 2, -90, 90));
-        Debug.Log("Map Value = " + MapValue(0.667f, 0, 2, -90, 90));*/
-    }
-
-    private void LateUpdate()
-    {
-        if (from != null && to != null)
-            RotationMappingMarker();
-
     }
 
     void RotationMappingMarker()
     {
         
-        angle = /*Manager.instance.ScalingFactor;*/ spineTargetAvatar.localEulerAngles.x - spineAvatar.localEulerAngles.x;
-        //Debug.Log("Angle = " + angle);
+        angle = spineTargetAvatar.localEulerAngles.x - spineAvatar.localEulerAngles.x;
 
         //Distance point from to point to
         distFromTo = Vector3.Distance(from.transform.position, to.transform.position);
         //distFromResult = distFromTo;
 
-        //Debug.Log("Dist FromTo = " + distFromTo);
-
         //point from
         from.LookAt(to);
-        Vector3 eurlerAngle = new Vector3(angle/*Manager.instance.ScalingFactor*/, 0, 0);
+        Vector3 eurlerAngle = new Vector3(angle, 0, 0);
         from.Rotate(eurlerAngle);
-
-        //Low of Cosines
-        //distToResult = Mathf.Sqrt(Mathf.Pow(distFromTo, 2f) + Mathf.Pow(distFromResult, 2f) - 2 * distFromTo * distFromResult * Mathf.Cos(/*angle*/ Mathf.Deg2Rad * ((180 - angle) / 2)));
-        //Debug.Log("Dist toResult = " + distToResult);
 
         //point result
         result.position = from.position + from.forward * distFromTo;
@@ -101,20 +87,10 @@ public class RotationMapping : MonoBehaviour
         Debug.DrawLine(to.position, to.forward * 1000f, Color.blue);
         Debug.DrawLine(from.position, from.forward * 1000f, Color.white);
         Debug.DrawLine(from.position, to.position, Color.red);
-
-        /* float angleA = Mathf.Round(GetVectorInternalAngle(from.transform.position, to.transform.position, result.transform.position));
-         Debug.Log("Angle A = " + angleA);
-
-         float angleB = Mathf.Round(GetVectorInternalAngle(to.transform.position, from.transform.position, result.transform.position));
-         Debug.Log("Angle B = " + angleB);
-
-         float angleC = Mathf.Round(GetVectorInternalAngle(result.transform.position, from.transform.position, to.transform.position));
-         Debug.Log("Angle C = " + angleC);*/
     }
 
     void RotationMappingAvatar()
     {
-
         if (Manager.instance.IsStartTask && Manager.instance.IsStartTrialTask)
         {
             //Increas rotation (only on flexion - rotation sup >0)
@@ -123,8 +99,8 @@ public class RotationMapping : MonoBehaviour
                 //modifying the Vector3, based on input multiplied by speed and time
                 Vector3 currentEulerAngles = new Vector3(spineTargetAvatar.localEulerAngles.x * Manager.instance.ScalingFactor, spineTargetAvatar.localEulerAngles.y, spineTargetAvatar.localEulerAngles.z);
 
-                spineTargetAvatar.transform.localEulerAngles = currentEulerAngles ;
-               
+                spineTargetAvatar.transform.localEulerAngles = currentEulerAngles;
+
                 if (spineAvatar.localEulerAngles.x >= 20)
                 {
                     Vector3 currentEulerAnglesrightShoulder = new Vector3(rightShoulderTargetAvatar.eulerAngles.x , rightShoulderTargetAvatar.eulerAngles.y, rightShoulderTargetAvatar.eulerAngles.z);
@@ -135,7 +111,6 @@ public class RotationMapping : MonoBehaviour
                     currentEulerAnglesleftShoulder += new Vector3(angle, 0, 0);
                     leftShoulderTargetAvatar.transform.eulerAngles = currentEulerAnglesleftShoulder;
                 }
-
             }
         }
     }

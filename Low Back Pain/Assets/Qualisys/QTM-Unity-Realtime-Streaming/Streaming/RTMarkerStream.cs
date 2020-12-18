@@ -19,6 +19,7 @@ namespace QualisysRealTime.Unity
 
         private bool streaming = false;
 
+        public Material material;
         public LayerMask layerMask;
         int layer;
 
@@ -86,7 +87,9 @@ namespace QualisysRealTime.Unity
                 if (!float.IsNaN(markerData[i].Position.sqrMagnitude))
                 {
                     markers[i].name = markerData[i].Name;
-                    markers[i].GetComponent<Renderer>().material.color = markerData[i].Color;
+                    markers[i].GetComponent<Renderer>().material = material;
+                    //markers[i].GetComponent<Renderer>().material.color = Color.white;// markerData[i].Color;
+                    //markers[i].GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
                     markers[i].transform.localPosition = markerData[i].Position;
                     
                     markers[i].layer = layer;
