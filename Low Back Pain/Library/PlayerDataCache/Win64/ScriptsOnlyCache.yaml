@@ -779,7 +779,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: d7320271ec9f3b22017247f38c080d6a
+      Hash: 1963f0a573896022be950af15d0558cf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Manager

@@ -51,6 +51,7 @@ public class Manager : MonoBehaviour
     public GameObject targetPositionLine;
     public TextMeshProUGUI nextTrialTaskText;
     public Image imgLine;
+    public Material mirror;
     public GameObject targetMarker;
     private int currentTrialTask = 0;
     private bool isBellow = false;
@@ -337,6 +338,7 @@ public class Manager : MonoBehaviour
                 IsGoBack = false;
 
                 imgLine.color = Color.green;
+                mirror.SetColor("_EmissionColor", Color.green);
                 imgLine.gameObject.SetActive(false);
                 returnToInitialPosition.SetActive(false);
 
@@ -372,6 +374,7 @@ public class Manager : MonoBehaviour
 
                 //Change color line
                 imgLine.color = new Color(255, 165, 0);//Yellow
+                mirror.SetColor("_EmissionColor", new Color(255, 165, 0));
 
                 //Start wainting time
                 waitingCoroutine = WaitingBellowTheLine();
@@ -387,6 +390,7 @@ public class Manager : MonoBehaviour
 
                 //Change color line
                 imgLine.color = Color.red;
+                mirror.SetColor("_EmissionColor", Color.red);
 
                 StopCoroutine(waitingCoroutine);
             }
@@ -395,6 +399,7 @@ public class Manager : MonoBehaviour
             {
                 //Change line color
                 imgLine.color = Color.green;
+                mirror.SetColor("_EmissionColor", Color.green);
 
                 //Active UI feddback
                 returnToInitialPosition.SetActive(true);
@@ -482,6 +487,7 @@ public class Manager : MonoBehaviour
 
             //Line
             imgLine.color = Color.red;
+            mirror.SetColor("_EmissionColor", Color.red);
             imgLine.transform.position = linePosition;
 
             //Next trial
